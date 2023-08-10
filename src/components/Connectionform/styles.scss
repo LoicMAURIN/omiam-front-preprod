@@ -1,0 +1,49 @@
+@use './src/styles/vars';
+
+.form {
+  width: 90%;
+  min-height: 70vh;
+  border-radius: 0.3rem;
+  background: vars.$grey-omiam-light;
+  box-shadow: 0 0 2px rgba(15,15,15,0);
+  margin: 2rem auto;
+  border: 1px solid vars.$grey-omiam;
+  
+  &-title {
+    font-family: 'font-title';
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1rem;
+    font-size: 3rem;
+  }
+  & span{
+    font-weight: 900;
+    text-align: left;
+  }
+  & h2{
+    font-weight: 900;
+    font-family: 'font-main';
+    font-size: 2rem;
+    margin: 1rem 0;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  & button{
+    font-weight: 100;
+  }
+  & input{
+    display: block;
+    width: 80%;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    border: 1px solid vars.$grey-omiam;
+    border-radius: 0.3rem;
+    background: vars.$grey-omiam-light;
+    font-size: 1.5rem;
+    &:focus {
+      outline: none;
+    }
+  }
+}

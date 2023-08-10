@@ -1,0 +1,38 @@
+@use '../../styles/vars';
+
+.footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  background-color: vars.$orange-omiam;
+  font-size: 0.9rem;
+
+  &-link {
+    padding: 0.5rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    
+
+    &--active {
+      text-decoration: underline;
+    }
+  }
+
+  &-text{
+    margin-top: 4rem;
+    color: white;
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+
+    &-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    }
+  }
+}

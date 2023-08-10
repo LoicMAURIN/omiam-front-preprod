@@ -1,0 +1,89 @@
+@use './src/styles/vars';
+
+.user-info {
+  padding-bottom: 0.5rem;
+
+  &-avatar{
+    width: 3rem;
+    border-radius: 100%;
+  }
+
+  &-pseudo{
+    color: white;
+    font-weight: bold;
+    font-family: 'main-font';
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+}
+
+.header-user-profile {
+  background-color: vars.$blue-omiam;
+}
+
+.profilelogo-dropdownmenu {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-family: 'font-title';
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.profilelogo-dropdownmenu-mobile {
+  font-size: 1.5rem;
+}
+.dropdown{
+  display:flex;
+  flex-direction: row;
+
+  &-deconnexion {
+    display: none;
+  }
+
+  &-list {
+    position:absolute;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+  
+    &-link{
+      position:relative;
+      top: 30px;
+      right: 0px;
+      background-color: white;
+      color: vars.$blue-omiam;
+      padding: 0.3rem;
+      cursor: pointer;
+
+      &:hover{
+        color: vars.$grey-omiam;
+      }
+  
+      &:first-child {
+        border-bottom: 1px solid vars.$blue-omiam;
+      }
+    }
+  }
+
+}
+
+.icon-miam-profilelogo, .profilelogodiv-title{
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .user-info-avatar{
+    width: 3rem;
+    border-radius: 100%;
+  }
+
+  .profilelogo-dropdownmenu {
+    font-size: 1.5rem;
+  }
+
+  .dropdown-list {
+    right: 50px;
+  }
+}

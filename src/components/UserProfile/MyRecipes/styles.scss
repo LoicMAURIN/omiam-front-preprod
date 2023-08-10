@@ -1,0 +1,101 @@
+@use './src/styles/vars';
+
+.my-recipes{
+  margin: 2em;
+}
+
+.my-recipes-cards{
+  display: flex;
+  flex-direction: column;
+
+  .my-recipes-card{
+
+    margin: 1em;
+    border: 0.1rem solid vars.$grey-omiam;
+    border-radius: vars.$raduis-img;
+    background: vars.$blue-omiam;
+    padding: 0.5rem;
+
+    i{
+      padding: 0;
+    }
+
+    a{
+      display: flex;
+
+      .my-recipes-card-img{
+        width: 150px;
+        height: 150px;
+        display: none;
+
+        img{
+          width: 150px;
+          height: 150px;
+        }
+      }
+
+      .my-recipes-card-block{
+        margin: 0.5em 0 0 0.5em;
+
+      }
+
+      .my-recipes-display{
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+
+        li{
+          align-self: start;
+          margin: 0 0 0.5em 0;
+          color: vars.$grey-omiam;
+          font-weight: bold;
+
+          i{
+            color: #fff;
+            font-size: 1.5em;
+            padding-right: 0.3em;
+          }
+        }
+
+        li:first-child {
+          margin: 0 0 0.5em 0;
+        }
+
+        li:last-child {
+          margin: 0.5em 0 0 0;
+        }
+      }
+
+    }
+
+    h2{
+      font-size: 2em;
+      font-weight: 200;
+    }
+
+    .my-recipes-responsive{
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 420px){
+  .my-recipes-card-img{
+    display: block !important;
+  }
+}
+
+
+@media screen and (min-width: 720px){
+  .my-recipes-responsive{
+    display: block !important;
+    // width: 100%;
+    margin: 0 0 0 2em;
+    // text-align: end;
+  }
+  .my-recipes-card-block{
+    width: 100%;
+    display: grid;
+    grid: auto-flow 1fr / 20% 80%;
+  }
+}

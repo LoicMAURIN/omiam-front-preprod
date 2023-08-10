@@ -1,0 +1,46 @@
+@use './src/styles/vars';
+
+.sidebar {
+  background-color: vars.$blue-omiam;
+  color: white;
+  position: fixed; 
+  top: 0;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  transform: translateX(100vw); 
+
+  &-links {
+    padding-top: 4rem;
+  }
+
+  &-item {
+    line-height: 1rem;
+      padding: 0.5rem;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: vars.$slow-transition;
+      font-weight: bold;
+
+    &:hover {
+      background-color: vars.$grey-omiam;
+        transition: vars.$fast-transition;
+    }
+  }
+}
+
+.sidebar-cancel {
+  padding-top: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+#show-sidebar {
+  transform: translateX(0);
+  transition: .5s;
+}
+#hide-sidebar {
+  transform: translateX(100vw);
+  transition: .2s;
+}

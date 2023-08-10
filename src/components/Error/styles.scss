@@ -1,0 +1,217 @@
+
+@use './src/styles/vars';
+.fs-2{
+    font-size: 20rem;
+}
+
+
+/*--Animation--*/
+.animation{
+  opacity: 0.8;
+  & .icon-stainer{
+    position: fixed;
+    top: 80%;
+    font-size: 10rem;
+    animation: 
+      moveCup 30s linear infinite,
+      spinner 8s linear infinite;
+  }
+  & .icon-rolling-pin{
+      position: fixed;
+      top: 87%;
+      font-size: 15em;
+      animation: 
+        moveCup 8s linear infinite,
+        spinner 1s linear infinite;
+  }
+  & .icon-ladle{
+    position: fixed;
+    top: 10%;
+    font-size: 12em;
+    animation: 
+      moveCup 3s linear infinite,
+      spinner 1s linear infinite;
+  }
+  & .icon-whisk{
+    position: fixed;
+    top: 22%;
+    font-size: 15em;
+    animation: 
+      moveCup 12s linear infinite,
+      spinner 1s linear infinite;
+  }
+  & .icon-glass{  
+    position: fixed;
+    top: 52%;
+    font-size: 5em;
+    animation: 
+      moveCup 4.2s linear infinite,
+      spinner 2s linear infinite;
+  }
+  & .icon-bottle{  
+    z-index: -1;
+    position: fixed;
+    top: 5%;
+    font-size: 15em;
+    animation: 
+      moveCup 13s linear infinite,
+      spinner 5s linear infinite;
+  }
+  & .icon-fork{  
+    position: fixed;
+    top: 24%;
+    font-size: 8em;
+    animation: 
+      moveCup 3s linear infinite,
+      spinner 1s linear infinite;
+  }
+  & .icon-tea-pot{
+    position: fixed;
+    z-index: -1;
+    top: 90%;
+    font-size: 9em;
+    animation: 
+      moveCup 9s linear infinite,
+      spinner 5s linear infinite;
+  }
+  & .icon-chicken-leg{
+    position: fixed;
+    top: 51%;
+    font-size: 15em;
+    animation: 
+      moveCup 15s linear infinite,
+      spinner 6s linear infinite;
+  }
+  & .icon-difficulty-1{
+    position: fixed;
+    top: 50%;
+    font-size: 2em;
+    animation: 
+      moveCup 17s linear infinite,
+      spinner 20s linear infinite;
+  }
+  & .icon-difficulty-2{
+    position: fixed;
+    top: 2%;
+    font-size: 5em;
+    animation: 
+      moveCup 10s linear infinite,
+      spinner 6s linear infinite;
+  }
+  & .icon-spatula{
+    z-index: -2;
+    position: fixed;
+    top: 63%;
+    font-size: 11em;
+    animation: 
+      moveCup 5s linear infinite,
+      spinner 3.3s linear infinite;
+  }
+
+  & .icon-pan{
+    position: fixed;
+    top: 13%;
+    font-size: 11em;
+    animation: 
+      moveCup 5s linear infinite,
+      spinner 3.3s linear infinite;
+  }
+  & .icon-oven{
+    position: fixed;
+    top: 53%;
+    animation: 
+      moveCup 5s linear infinite,
+      spinner 3.3s linear infinite;
+  }
+  & .icon-cakes{
+    position: fixed;
+    top: 33%;
+    font-size: 5em;
+    animation: 
+      moveCup 10s linear infinite,
+      spinner 10s linear infinite;
+  }& .icon-miam{
+    position: fixed;
+    top: 43%;
+    font-size: 15em;
+    animation: 
+      moveCup 8s linear infinite,
+      spinner 4.3s linear infinite;
+  }
+  & .icon-sandblasted{
+    position: fixed;
+    top: 53%;
+    font-size: 1em;
+    animation: 
+      moveCup 5s linear infinite,
+      spinner 3.3s linear infinite;
+  }
+  & .icon-timer{
+    position: fixed;
+    top: 74%;
+    font-size: 10em;
+    animation: 
+      moveCup 5s linear infinite,
+      spinner 4.3s linear infinite;
+  }
+  & .icon-radish{
+    position: fixed;
+    top: 3%;
+    font-size: 10em;
+    animation: 
+      moveCup 5s linear infinite,
+      spinner 3.3s linear infinite;
+  }
+  & .icon-dish{
+    position: fixed;
+    top: 33%;
+    font-size: 5em;
+    animation: 
+      moveCup 5s linear infinite,
+      spinner 3.3s linear infinite;
+  }
+  & .icon-entrance{
+    position: fixed;
+    top: 41%;
+    font-size: 7em;
+    animation: 
+      moveCup 10s linear infinite,
+      spinner 10s linear infinite;
+  }
+  & .icon-cup{
+    position: fixed;
+    top: 41%;
+    font-size: 8em;
+    animation: 
+      moveCup 20s linear infinite,
+      spinner 3.3s linear infinite;
+  }
+  & .icon-cup-coffee{
+    position: fixed;
+    top: 25%;
+    font-size: 6em;
+    animation: 
+      moveCup 8s linear infinite,
+      spinner 3.3s linear infinite;
+  }
+
+}
+
+
+@keyframes moveCup {
+    0%{
+      left: -30%;
+    }
+    100% { 
+      left: 100%;
+    }
+  }
+  @keyframes spinner {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

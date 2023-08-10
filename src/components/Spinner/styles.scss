@@ -1,0 +1,17 @@
+@use '../../styles/vars';
+
+.spinner {
+  animation: rotation 2s infinite linear;
+  font-size: 5rem;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+@-webkit-keyframes rotation {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(359deg);
+  }
+}

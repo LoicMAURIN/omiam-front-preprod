@@ -1,0 +1,43 @@
+@use './src/styles/vars';
+
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: vars.$grey-omiam;
+  flex-direction: column;
+
+  .construction-title{
+    font-size: 3em;
+    // align-self: end;
+    // margin: 0 0 1em 1em;
+  }
+
+  .oven{
+    .icon-smoke{
+      font-size: 7em;
+      animation: 2s ease-in infinite smoke;
+    }
+  
+    display: flex;
+    flex-direction: column;
+  
+  }
+}
+
+@keyframes smoke {
+  0% {
+    opacity: 20%;
+    transform: scaleY(1);
+  }
+  50% {
+    opacity: 100%;
+    transform: scaleY(1.2);
+  }
+  100% {
+    opacity: 20%;
+    transform: scaleY(1);
+  }
+}
+

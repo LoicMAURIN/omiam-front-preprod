@@ -1,0 +1,42 @@
+@use '../../../styles/vars';
+
+// .aboutus-cards{
+//   margin: 1rem;
+//   width: 20em;
+// }
+
+.aboutus{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
+  &-caption-title {
+  font-weight: 900;
+  }
+}
+.card-img-about {
+  width: 12em;
+  // height: 20em;
+}
+
+.card-aboutUs {
+  width: 20em;
+  // height: 12em;
+
+  border: 0.1rem solid #2a2a2a;
+  border-radius: vars.$raduis-img;
+
+  background: vars.$blue-omiam;
+  padding: 1rem;
+  margin: 1em;
+}
+
+// .card-aboutUs:last-child{
+//   border-right: 0.1rem solid #2a2a2a;
+// }
+.list-social ul{
+  display: flex;
+    justify-content: space-around;
+    margin: 1rem 0;
+    font-size: 2rem;
+}
