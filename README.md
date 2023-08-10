@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Apotheosis project Oclock Front
 
 Projet réaliser lors de l'apothéose durant la formation chez [O'Clock](https://oclock.io/)
@@ -70,3 +71,6 @@ npm run {script}
 * **Nathalie Tournon** _alias_ [@NathalieTournon ](https://github.com/NathalieTournon)
 
 * **Adrien Pinilla** _alias_ [@AdrienPinilla ](https://github.com/AdrienPinilla)
+=======
+# omiam-front-preprod
+>>>>>>> ec4b4825d1e653addf65a7cc1765f2530c124621
