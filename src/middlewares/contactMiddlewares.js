@@ -2,7 +2,7 @@ import axios from 'axios';
 import { postMessageSuccess, POST_MESSAGE } from '../action/contact';
 
 const axiosInstance = axios.create({
-  baseURL: 'https://back-omiam.unetaupechezvous.fr/public/api/contact',
+  baseURL: 'https://back.omiam-preprod.fr/api/contact',
 });
 const contactMiddleware = (store) => (next) => (action) => {
   switch (action.type) {

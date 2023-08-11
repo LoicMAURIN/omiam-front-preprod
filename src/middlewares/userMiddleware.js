@@ -14,7 +14,7 @@ import {
 
 const axiosInstance = axios.create({
   // par exemple, on peut définir une url de base !
-  baseURL: 'https://back-omiam.unetaupechezvous.fr/public/api/',
+  baseURL: 'https://back.omiam-preprod.fr/api/',
 });
 
 const userMiddleware = (store) => (next) => (action) => {
@@ -89,7 +89,7 @@ const userMiddleware = (store) => (next) => (action) => {
       formData.append('picture', document.getElementById('fileUploadUser').files[0]);
       axios({
         method: 'post',
-        url: 'https://back-omiam.unetaupechezvous.fr/public/api/users',
+        url: 'https://back.omiam-preprod.fr/api/users',
         data: formData,
         headers: {
           'Content-Type': 'multipart/form-data',

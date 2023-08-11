@@ -13,7 +13,7 @@ import {
 const homePage = (store) => (next) => (action) => {
   switch (action.type) {
     case FETCH_RECIPES: {
-      axios.get('https://back-omiam.unetaupechezvous.fr/public/api/home')
+      axios.get('https://back.omiam-preprod.fr/api/home')
         .then(
           (response) => {
             store.dispatch(saveRecipesLast(response.data.lastRecipes));
@@ -26,7 +26,7 @@ const homePage = (store) => (next) => (action) => {
     case FETCH_RECIPES_CATEGORY: {
       const state = store.getState();
       const { categoryId } = state.homePage;
-      axios.get(`https://back-omiam.unetaupechezvous.fr/public/api/recipes/categories/${categoryId}/search?query=`)
+      axios.get(`https://back.omiam-preprod.fr/api/recipes/categories/${categoryId}/search?query=`)
         .then(
           (response) => {
             store.dispatch(saveRecipesCategory(response.data));
