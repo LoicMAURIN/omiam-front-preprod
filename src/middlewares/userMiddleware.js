@@ -38,6 +38,7 @@ const userMiddleware = (store) => (next) => (action) => {
           axiosInstance.defaults.headers.common.Authorization = `Bearer ${localStorage.token}`;
 
           // - Save in localStorage
+          window.localStorage.setItem('token', user.token);
           window.localStorage.setItem('userid', user.userid);
           window.localStorage.setItem('pseudo', user.pseudo);
           window.localStorage.setItem('avatar', user.avatar);
