@@ -49,7 +49,7 @@ function Error() {
           </div>
           <div className="one-recipe-img">
             <img
-              src="https://back-omiam.unetaupechezvous.fr/public/omiam/sources/images/recipe/recipe_143.webp"
+              src="https://back.omiam-preprod.fr/omiam/sources/images/recipe/recipe_143.webp"
               alt="404 plats"
               className="one-recipe-img"
             />
@@ -97,13 +97,13 @@ function Error() {
         <h2 className="one-recipe-comments-title">Commentaires</h2>
         <div>
           <ul className="one-recipe-comments-ul">
-            <li><img className="one-recipe-img-user" src="https://back-omiam.unetaupechezvous.fr/public/omiam/sources/images/user/avatar_14.jpg" alt="-avatar" /></li>
+            <li><img className="one-recipe-img-user" src="https://back.omiam-preprod.fr/omiam/sources/images/user/avatar_14.jpg" alt="-avatar" /></li>
             <li><p className="one-recipe-comments-speudo">Maxime O'Chefs</p></li>
 
           </ul>
           <p className="one-recipe-comments-content">Manque un peu de sel!</p>
           <ul className="one-recipe-comments-ul">
-            <li><img className="one-recipe-img-user" src="https://back-omiam.unetaupechezvous.fr/public/omiam/sources/images/user/default/user.jpg" alt="-avatar" /></li>
+            <li><img className="one-recipe-img-user" src="https://back.omiam-preprod.fr/omiam/sources/images/user/default/user.jpg" alt="-avatar" /></li>
             <li><p className="one-recipe-comments-speudo">Henry</p></li>
 
           </ul>

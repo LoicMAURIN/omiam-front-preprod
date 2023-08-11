@@ -36,7 +36,7 @@ function Sidebar() {
             </li>
             {logsAdmin ? (
               <li className="sidebar-item">
-                <a href="https://back-omiam.unetaupechezvous.fr/public/login" className="navbar-links">
+                <a href="https://back.omiam-preprod.fr/login" className="navbar-links">
                   Backoffice
                 </a>
               </li>

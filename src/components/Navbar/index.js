@@ -34,7 +34,7 @@ function Navbar() {
             </div>
             <div className="navbar-wrapper-links">
               {logsAdmin ? (
-                <a href="https://back-omiam.unetaupechezvous.fr/public/login" className="navbar-wrapper-item">
+                <a href="https://back.omiam-preprod.fr/login" className="navbar-wrapper-item">
                   Backoffice
                 </a>
               ) : ''}

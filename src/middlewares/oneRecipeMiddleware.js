@@ -24,7 +24,7 @@ const onRecipeMiddleware = (store) => (next) => (action) => {
       axios.get(`https://back.omiam-preprod.fr/api/recipes/${idSlug}`)
         .then(
           (response) => {
-            console.log(response);
+            //console.log(response);
             let result = response.data;
             let resultSteps = response.data.steps;
             if (!Array.isArray(response.data)){
@@ -57,7 +57,7 @@ const onRecipeMiddleware = (store) => (next) => (action) => {
         { headers },
       )
         .then((response) => {
-          console.log(response);
+          //console.log(response);
           return next(action);
         })
         .catch((error) => {
@@ -78,14 +78,14 @@ const onRecipeMiddleware = (store) => (next) => (action) => {
         { headers },
       )
         .then((response) => {
-          console.log(response);
+          //console.log(response);
           if (response.status === 201) {
             store.dispatch(fetchRecipe());
           }
           return next(action);
         })
         .catch((error) => {
-          console.log(error);
+          //console.log(error);
           return next(action);
         });
       return next(action);
