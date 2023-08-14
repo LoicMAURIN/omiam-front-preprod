@@ -10,7 +10,6 @@ import './styles.scss';
 function Recipe() {
   const dispatch = useDispatch();
   const { id } = useParams();
-
   dispatch(idSlugRecipe(id));
   // const userIdConnected = useSelector((state) => state.user.settingsLogIn.userid);
   const usersIdMiamed = useSelector((state) => state.oneRecipe.usersId);
@@ -18,7 +17,6 @@ function Recipe() {
   const oneRecipe = useSelector((state) => state.oneRecipe.list);
   const nbMiams = useSelector((state) => state.oneRecipe.nbMiams);
   const toggleMiams = useSelector((state) => state.oneRecipe.toogleMiams);
-
   const ingredients = useSelector((state) => state.oneRecipe.ingredients);
   const listSteps = useSelector((state) => state.oneRecipe.steps);
   useEffect(
@@ -33,7 +31,6 @@ function Recipe() {
     // const isMiam = usersIdMiamed.includes(userIdConnected);
     evt.preventDefault();
     const nbToggleMiams = (toggleMiams) ? +1 : -1;
-    console.log(nbToggleMiams);
     dispatch(submitUsersIdMiams());
     dispatch(setIsMiam());
     dispatch(saveMiam(nbToggleMiams + nbMiams));
@@ -44,7 +41,7 @@ function Recipe() {
         <>
           <div> 
             <div className="one-recipe-header">
-              <h1 className="one-recipe-title" >{item.title}</h1>
+              <h1 className="one-recipe-title">{item.title}</h1>
               <h2>{item.caption}</h2>
               <div className="one-recipe-author">
                 {/*
@@ -52,7 +49,6 @@ function Recipe() {
                 */}
                 <h3> de {item.user.pseudo}</h3>
               </div>
-
             </div>
             <div className="one-recipe-img">
               <img
@@ -86,8 +82,6 @@ function Recipe() {
             </div>
             <div className="one-recipe-steps">
               <ul className="one-recipe-steps-ul">
-                {console.log(listSteps)}
-                {Object.keys(listSteps[0]).map((nom, numberInt) => console.log('nom =>', nom, 'number =>', numberInt))}
                 {Object.keys(listSteps[0]).map((nom, numberInt) => (
                   <li>
                     <h2 className="one-recipe-steps-title">Etape {numberInt + 1}</h2>

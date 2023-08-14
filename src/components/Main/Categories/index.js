@@ -41,7 +41,7 @@ function Categories() {
             { (!toogleSpinner) && <Spinner />}
             { toogleSpinner && (
             <div>
-              <Link to={`/recette/${item.id}/${item.slug}`}>
+              <Link to={`/recette/${item.id}/${item.slug}`} key={item.id}>
                 {/* Card */}
                 <div className="card">
                   <h2 className="card-recipe">{item.title}</h2>

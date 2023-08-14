@@ -77,7 +77,6 @@ function CreatedRecipe() {
   });
   const handleSumbit = ((evt) => {
     evt.preventDefault();
-    console.log('submit', evt);
     dispatch(postCreated());
     // dispatch(durationAction(evt.target.value, 'duration'));
   });

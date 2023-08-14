@@ -1,6 +1,5 @@
 import axios from 'axios';
 
-
 import {
   LOGIN,
   LOGOUT,
@@ -98,23 +97,17 @@ const userMiddleware = (store) => (next) => (action) => {
       })
         .then((response) => {
           console.log(response);
-
           // Redirect of the user towards to home page
           store.dispatch(resetRegistrationForm());
-
           return next(action);
         })
         .catch((error) => {
           console.log(error);
-
           //store.dispatch(authError('Email ou mot de passe incorrect'));
-
           return next(action);
         });
-
       return next(action);
     }
-
     default:
       return next(action);
   }

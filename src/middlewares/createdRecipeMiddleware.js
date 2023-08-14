@@ -31,7 +31,6 @@ const createdRecipeMiddleware = (store) => (next) => (action) => {
         category: parseInt(category, 10),
         steps: steps,
       }));
-      console.log(duration, difficulty, category, steps);
       formData.append('ingredients', JSON.stringify({
         quantities: quantities,
         units: units,

@@ -26,6 +26,7 @@ const homePage = (store) => (next) => (action) => {
     case FETCH_RECIPES_CATEGORY: {
       const state = store.getState();
       const { categoryId } = state.homePage;
+
       axios.get(`https://back.omiam-preprod.fr/api/recipes/categories/${categoryId}/search?query=`)
         .then(
           (response) => {

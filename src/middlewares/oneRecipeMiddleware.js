@@ -69,8 +69,6 @@ const onRecipeMiddleware = (store) => (next) => (action) => {
     case COMMENT_CREACTED: {
       const { commentValue } = state.oneRecipe.comment;
       const recipe = state.oneRecipe.list[0];
-
-      console.log(recipe.slug);
       const headers = { Authorization: `Bearer ${token}` };
       axios.post(
         `https://back.omiam-preprod.fr/api/recipes/${idSlug}/comments`,

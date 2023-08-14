@@ -46,12 +46,12 @@ function Home() {
 
       {/* Title Page */}
       <h1 className="title-home">
-        O'miam, une histoire de miam's et recettes
+        O'miam, une histoire de miam's et de recettes
       </h1>
       { (!userConnect) ? (
       <>
       <h2>
-        Rejoignez notre communauté de passionnés de cu  yisine et partagez vos créations culinaires.
+        Rejoignez notre communauté de passionnés de cuisine et partagez vos créations culinaires.
       </h2>
       <button type="button">
         <Link to="/connexion">connexion</Link>
