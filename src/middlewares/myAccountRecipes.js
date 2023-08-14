@@ -22,7 +22,6 @@ const myAccountRecipes = (store) => (next) => (action) => {
         .then(
           (response) => {
             store.dispatch(saveRecipesMyAccount(response.data));
-            console.log(response.data);
           },
         )
         .catch(
@@ -41,9 +40,7 @@ const myAccountRecipes = (store) => (next) => (action) => {
         },
       })
         .then((response) => {
-          console.log(response);
           store.dispatch(saveFavoritesMiams(response.data));
-          console.log(response.data);
         })
         .catch((err) => {
           console.log(err);

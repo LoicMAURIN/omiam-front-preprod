@@ -96,7 +96,6 @@ const userMiddleware = (store) => (next) => (action) => {
         },
       })
         .then((response) => {
-          console.log(response);
           // Redirect of the user towards to home page
           store.dispatch(resetRegistrationForm());
           return next(action);

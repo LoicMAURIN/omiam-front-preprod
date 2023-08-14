@@ -44,8 +44,6 @@ function Register({
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.target);
-    console.log(Object.fromEntries(data.entries()));
-
     dispatch(register());
   };
 

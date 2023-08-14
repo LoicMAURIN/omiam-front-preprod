@@ -320,7 +320,6 @@ function CreatedRecipe() {
               value={getEtapeValue(index === 1)}
             />
           </div>
-          {console.log(toggles[index])}
           { togglesStep < 2 ? (
           <button type="button" className="" onClick={() => toggleHandler(index + 1)}>
             <i className="icon-add" />

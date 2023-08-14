@@ -12,7 +12,6 @@ const contactMiddleware = (store) => (next) => (action) => {
         name, email, topic, message,
       } = state.contact;
       const { token } = localStorage;
-      console.log(name, email, topic, message);
       axiosInstance.post(
         '',
         {
@@ -24,7 +23,6 @@ const contactMiddleware = (store) => (next) => (action) => {
       )
         .then((response) => {
           // axios.defaults.headers.common.Authorization = `Bearer ${token}`;
-          console.log(response);
           if (response.status === 201) {
             store.dispatch(postMessageSuccess(response));
           }
